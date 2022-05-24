@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Social Media Blocker",
+  "description": "Social Media Blocker",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Content.js"]
+    }
+  ],
+  "icons": { "48": "icon-48.png", "128": "icon-128.png" },
+  "browser_action": {
+    "default_popup": "Popup.html"
+  },
+  "permissions": [
+    "https://www.youtube.com/*",
+    "https://www.facebook.com/*",
+    "https://www.netflix.com/*"
+  ]
+}
